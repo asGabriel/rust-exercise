@@ -1,3 +1,5 @@
+mod exercise_01;
 fn main() {
-    println!("Hello, world!");
+    println!("Hello to exercises!");
+    
 }

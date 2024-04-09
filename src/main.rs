@@ -7,5 +7,6 @@ fn main() {
 
     let ex02 = exercise_02::camel_case("Lets go my brother");
     println!("{}", ex02);
-
+    let ex02_clever = exercise_02::clever_camel_case("This is better than the another one");
+    println!("{}", ex02_clever);
 }

@@ -32,7 +32,6 @@ pub fn num_as_roman(mut num: i32) -> String {
             result.push_str(roman_values[i]);
         }
     }
-    println!("EX 01: The Arabic number {} in Roman is {}", num, result);
     result
 }
 

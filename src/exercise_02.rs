@@ -7,13 +7,13 @@ Examples (input --> output):
 */
 
 pub fn camel_case(str: &str) -> String {
-    let split_str: Vec<&str> = str.trim().split(" ").collect();
+    let split_str: Vec<&str> = str.trim().split(' ').collect();
     let mut result = String::new();
 
     for word in split_str {
         for (index, letter) in word.chars().enumerate() {
             match index {
-                0 => result.push_str(&letter.to_uppercase().to_string().as_str()),
+                0 => result.push_str(letter.to_uppercase().to_string().as_str()),
                 _ => result.push_str(letter.to_lowercase().to_string().as_str()),
             }
         }

@@ -22,7 +22,7 @@ Remember that there can't be more than 3 identical symbols in a row.
 
 /// Converts a number to a string representating roman numeral.
 pub fn num_as_roman(mut num: i32) -> String {
-    let arabic_values = vec![1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    let arabic_values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
     let roman_values = vec!["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
     let mut result = String::new();
 

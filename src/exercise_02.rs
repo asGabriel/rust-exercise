@@ -28,6 +28,7 @@ pub fn clever_camel_case(str: &str) -> String {
         .collect()
 }
 
+#[cfg(test)]
 mod test {
     use super::{camel_case, clever_camel_case};
     

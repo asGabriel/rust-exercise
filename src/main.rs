@@ -16,4 +16,6 @@ fn main() {
     // EXERCISE 03
     let ex03: Vec<Vec<usize>> = exercise_03::multiplication_table(2);
     println!("{:?}", ex03);
+    let ex03_an: Vec<Vec<usize>> = exercise_03::another_way_to_multiplication_table(2);
+    println!("{:?}", ex03_an);
 }

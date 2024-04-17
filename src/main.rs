@@ -1,6 +1,7 @@
 mod exercise_01;
 mod exercise_02;
 mod exercise_03;
+mod exercise_04;
 fn main() {
     println!("Hello to exercises!");
     // EXERCISE 01
@@ -18,4 +19,8 @@ fn main() {
     println!("{:?}", ex03);
     let ex03_an: Vec<Vec<usize>> = exercise_03::another_way_to_multiplication_table(2);
     println!("{:?}", ex03_an);
+
+    // EXERCISE 04
+    let ex04 = exercise_04::break_camel_case("thisIsACamelCaseWord");
+    println!("{:?}", ex04);
 }

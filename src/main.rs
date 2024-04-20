@@ -2,6 +2,7 @@ mod exercise_01;
 mod exercise_02;
 mod exercise_03;
 mod exercise_04;
+mod exercise_05;
 fn main() {
     println!("Hello to exercises!");
     // EXERCISE 01
@@ -23,4 +24,8 @@ fn main() {
     // EXERCISE 04
     let ex04 = exercise_04::break_camel_case("thisIsACamelCaseWord");
     println!("{:?}", ex04);
+
+    // EXERCISE 05
+    let ex05 = exercise_05::is_prime(5);
+    println!("Is prime? {:?}", ex05);
 }

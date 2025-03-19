@@ -1,11 +1,3 @@
-/*
-Write a method (or function, depending on the language) that converts a string to camelCase, that is, all words must have their first letter capitalized and spaces must be removed.
-
-Examples (input --> output):
-"hello case" --> "HelloCase"
-"camel case word" --> "CamelCaseWord"
-*/
-
 pub fn camel_case(str: &str) -> String {
     let split_str: Vec<&str> = str.trim().split(' ').collect();
     let mut result = String::new();
@@ -31,7 +23,7 @@ pub fn clever_camel_case(str: &str) -> String {
 #[cfg(test)]
 mod test {
     use super::{camel_case, clever_camel_case};
-    
+
     #[test]
     fn sample_test() {
         assert_eq!(camel_case("test case"), "TestCase");
@@ -40,7 +32,7 @@ mod test {
         assert_eq!(camel_case(" camel case word"), "CamelCaseWord");
         assert_eq!(camel_case(""), "");
     }
-    
+
     #[test]
     fn clever_test() {
         assert_eq!(clever_camel_case("test case"), "TestCase");
@@ -50,4 +42,3 @@ mod test {
         assert_eq!(clever_camel_case(""), "");
     }
 }
-    

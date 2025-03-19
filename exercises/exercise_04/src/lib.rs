@@ -1,13 +1,3 @@
-/*
-Break camelCase
-Complete the solution so that the function will break up camel casing, using a space between words.
-
-Example
-"camelCasing"  =>  "camel Casing"
-"identifier"   =>  "identifier"
-""             =>  ""
-*/
-
 pub fn break_camel_case(s: &str) -> String {
     s.chars().into_iter().fold(String::new(), |mut word, char| {
         if char.is_ascii_uppercase() {
